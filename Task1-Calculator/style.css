@@ -1,0 +1,96 @@
+*{
+margin : 0 ;
+padding : 0 ;
+box-sizing : border-box ;
+font-family: 'Catamaran', sans-serif;
+ }
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/math1.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.container{
+    margin-top: -50px;
+height : 100vh ;
+display : flex ;
+justify-content : center ;
+align-items : center ;
+}
+.calculator {
+background-color : #8bb0ce ;
+padding:15px;
+border-radius:30px;
+box-shadow:inset 5px 5px 12px #8ca6d3,
+              5px 5px 12px rgba ( 0,0,0,.16) ;
+display: grid;
+grid-template-columns: repeat(4,68px);          
+}
+input{
+grid-column : span 4 ;
+height : 70px ;
+width : 260px ;
+background-color:#ebf1f6 ;
+box-shadow:inset -5px -5px 12px #b5d9f3 ,
+            inset 5px 5px 12px rgba ( 0,0,0 , .16 ) ;
+border : none ;
+border-radius : 30px ;
+color:rgb ( 70 , 70 , 70 ) ;
+font-size : 50px;
+text-align: end;
+margin: auto;
+margin-top: 40px;
+margin-bottom: 30px;
+padding: 20px;                                 
+}
+button{
+    height: 48px;
+    width: 48px;
+    background-color: #c7d9e7;
+    box-shadow: -5px -5px 12px #ffffff ,
+                  5px 5px 12px rgb(0, 0, 0,.16);
+border: none;
+border-radius: 50%;
+margin: 8px;
+font: 16px sans-serif;
+}
+button:hover{
+    background-color: #9ab8d6;
+    box-shadow: -5px -5px 12px #8991c5 ,
+                  5px 5px 12px rgba(37, 37, 37, 0.118);
+}
+.equal{
+    width: 115px;
+    border-radius: 40px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px #b5d9f3 ,
+                  5px 5px 12px rgba(5, 5, 5, 0.322);
+}
+nav{
+    display: flex;
+
+}
+nav h1{
+    color: #4dd2d6;
+    margin-top: 25px;
+    margin-left: 510px;
+    font-size: 48px;
+}
+nav .fa-heart-o{
+    color: #f44336;
+}
+nav .text{
+    margin-top: 30px;
+    margin-left: 450px;
+    font-weight:455px;
+    font-size: 25px;
+    background-image: linear-gradient(90deg,#00dbde 0%,#fc00ff 46%,#ffcc70 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+nav img{
+    margin-left: 5px;
+}
