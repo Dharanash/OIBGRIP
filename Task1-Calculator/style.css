@@ -71,8 +71,7 @@ button:hover{
 }
 nav{
     display: flex;
-
-}
+    background-image: linear-gradient(rgba(34, 48, 105, 0.7),rgba(55, 72, 139, 0.7))}
 nav h1{
     color: #4dd2d6;
     margin-top: 25px;
@@ -84,7 +83,7 @@ nav .fa-heart-o{
 }
 nav .text{
     margin-top: 30px;
-    margin-left: 450px;
+    margin-left: 430px;
     font-weight:455px;
     font-size: 25px;
     background-image: linear-gradient(90deg,#00dbde 0%,#fc00ff 46%,#ffcc70 100%);
