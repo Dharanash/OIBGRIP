@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="Assests/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+ <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>To-do App</title>
+
+</head>
+<body>
+
+    <section class="head">
+      <div class="header">
+        <h1 style="font-style: Poppins;">Your &nbsp;<span class="styling">TODO</span>&nbsp; List  &nbsp;<p style="font-weight:50; font-size:20px;" class="text">( Made with<i class="fa fa-heart-o" ></i>by SDcorps )</p></h1>
+       
+        <div class="input-div"> 
+            <input class="txtb" type="text" placeholder="What Do You want to Do ... ">
+        </div>
+      </div>
+    </section>
+    
+    <section class="body">
+    <div class="container">
+        
+        <div class="noncomp">
+            <h3>Not Completed</h3>
+
+            <!-- <div class="task">
+                task
+                <i class="bi bi-trash-fill"></i>
+                <i class="bi bi-check-lg"></i>
+            </div> -->
+        </div>
+
+        <div class="comp">
+            <h3 style="padding-top:8px;">Completed</h3>
+
+            <!-- <div class="task">
+                task
+                <i class="bi bi-trash-fill"></i>
+                <i class="bi bi-check-lg"></i>
+            </div>
+
+            <div class="task">
+                task
+                <i class="bi bi-trash-fill"></i>
+                <i class="bi bi-check-lg"></i>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+ $(".txtb").on("keyup",function(e){
+
+    if(e.keyCode == 13 && $(".txtb").val() != "")
+    {
+        var task= $("<div class='task'></div>").text($(".txtb").val());
+        var del = $("<i class='bi bi-trash-fill'></i>").click(function(){
+            var p= $(this).parent();
+            p.fadeOut(function(){
+               p.remove();
+            });
+        });
+
+        var check= $("<i class='bi bi-check-lg'></i>").click(function(){
+            var p= $(this).parent();
+            p.fadeOut(function(){
+              $(".comp").append(p);
+              p.fadeIn();
+             });
+             $(this).remove();
+        });
+
+        task.append(del,check);
+        $(".noncomp").append(task);
+           //to clear the input
+        $(".txtb").val("");
+    }
+ });
+</script>
+
+</body>
+</html>

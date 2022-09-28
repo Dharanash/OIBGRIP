@@ -1,0 +1,88 @@
+*{
+    margin : 0 ;
+    padding : 0 ;
+    box-sizing : border-box ;
+    font-style: Roboto;
+     }
+
+
+     /* header */
+.head{
+        height: 250px;
+        width: 100%;
+        background-image: url(img/todo.jpg);
+        background-position: center;
+        background-size: cover; 
+        
+    }
+.head .header{
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.head h1{
+    font-size: 3rem;
+    font-weight: 10;
+    margin: 1rem 0 3rem;
+    color: #fff;
+    display: flex;
+}
+.head p{
+    margin-top: 20px;
+    margin-left: 8px;
+    background-image: linear-gradient(90deg,#00dbde 0%,#fc00ff 46%,#ffcc70 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.head p .fa-heart-o{
+    color: #f44336;
+    
+}
+.head span{
+  font-weight: 450;
+  color: lime;
+}
+.head .input-div .txtb{
+    padding:0.5rem 1rem;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: aliceblue;
+    width: 500px;
+    font-size: 1.15rem;
+    margin: 0.25rem;
+    border-radius: 25px;
+}
+/* body */
+body {
+    background-image : linear-gradient(80deg ,#487eb0 , #fbc531ac ) ;
+    min-height : 100vh ;
+    
+   }
+.container {
+ max-width : 800px ;
+ margin : auto ;
+  padding : 10px ;
+}
+h3 {
+    margin : 20px 0 ;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.604);
+    border-radius: 12px;
+}
+.task {
+  width : 100% ;
+  background : rgba(255,255,255,0.5 ) ;
+  padding : 18px ;
+ margin : 6px 0 ;
+ overflow : hidden ;
+}
+.task i {
+    float : right ;
+    margin-left : 20px ;
+    cursor : pointer ;
+}
+
+.comp .task {
+ background : rgba(0,0,0,.5) ;
+ color: #fff;
+}
